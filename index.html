@@ -1,20 +1,19 @@
 <html>
   <head>
     <style>
-      header h1 {
-        font-size: 48px;
+      body {
+        margin: 0;
+        background-color: yellow;
         font-family: Calibri, sans-serif;
+        font-size: 24px;
       }
-
-<html>
-  <head>
-    <style>
       header {
         display: flex;
         align-items: center;
+        height: 20%; /* Set the height of the header */
       }
       header img {
-        width: 50px;
+        height: 100%; /* Make the logo the same height as the header */
         margin-right: 10px;
       }
       header h1 {
@@ -22,37 +21,8 @@
         font-size: 36px;
         font-weight: bold;
       }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img src="images/logo" alt="Logo">
-      <h1>Summerfield Creations</h1>
-
-
-  </body>
-</html>
-
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        background-color: yellow;
-        font-family: Arial, sans-serif;
-        margin: 0;
-      }
-      header {
-        background-color: #333;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-      }
-      header h1 {
-        margin: 0;
-        font-size: 36px;
-        font-weight: bold;
+      p {
+        text-align: center;
       }
       .products {
         display: flex;
@@ -60,58 +30,56 @@
         justify-content: center;
       }
       .product {
-        background-color: white;
-        border: 1px solid #ddd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 10px;
-        text-align: center;
-        width: 300px;
       }
       .product img {
-        width: 100%;
-      }
-      .product h2 {
-        margin: 10px;
-      }
-      .product p {
-        margin: 10px;
+        width: 200px;
       }
       .product button {
-        background-color: green;
-        border: none;
-        color: white;
-        cursor: pointer;
-        padding: 10px;
+        margin: 10px;
       }
-      @media (max-width: 600px) {
-        .product {
-          width: 250px;
-        }
-      }
-      @media (max-width: 500px) {
-        .product {
-          width: 200px;
-        }
+      a {
+        text-align: center;
       }
     </style>
   </head>
   <body>
     <header>
+      <img src="images/logo" alt="Logo">
       <h1>Summerfield Creations</h1>
     </header>
+    <p>Summerfield Creations are a family run business focussed on bringing you the very best wooden products to enhance your home and kitchen. We work with ethical suppliers to meet your needs and we often need a poo.</p>
+    <h2 class="products">Products</h2>
     <div class="products">
       <div class="product">
-        <h2>Product 1</h2>
-        <img src="product1.jpg" alt="Product 1">
-        <button onclick="window.location.href='buy.html'">Buy</button>
-        <button onclick="window.location.href='description.html'">View Description</button>
+        <img src="images/product1.jpg" alt="Product 1">
+        <button>Buy</button>
+        <button>Product Description</button>
       </div>
       <div class="product">
-        <h2>Product 2</h2>
-        <img src="product2.jpg" alt="Product 2">
-        <button onclick="window.location.href='buy.html'">Buy</button>
-        <button onclick="window.location.href='description.html'">View Description</button>
+        <img src="images/product2.jpg" alt="Product 2">
+        <button>Buy</button>
+        <button>Product Description</button>
       </div>
-      <!-- Add additional products here -->
+      <div class="product">
+        <img src="images/product3.jpg" alt="Product 3">
+        <button>Buy</button>
+        <button>Product Description</button>
+      </div>
+      <div class="product">
+        <img src="images/product4.jpg" alt="Product 4">
+        <button>Buy</button>
+        <button>Product Description</button>
+      </div>
+      <div class="product">
+        <img src="images/product5.jpg" alt="Product 5">
+        <button>Buy</button>
+        <button>Product Description</button>
+      </div>
     </div>
+    <a href="https://www.amazon.com/sfc">Visit our Amazon shop</a>
   </body>
 </html>
