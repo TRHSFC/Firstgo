@@ -5,7 +5,7 @@
         box-sizing: border-box;
       }
       body {
-        background-color: #f5f5f5;
+        background-color: yellow;
         font-family: Arial, sans-serif;
         margin: 0;
       }
@@ -19,16 +19,8 @@
       }
       header h1 {
         margin: 0;
-        font-size: 24px;
+        font-size: 36px;
         font-weight: bold;
-      }
-      header nav {
-        display: flex;
-      }
-      header nav a {
-        color: white;
-        text-decoration: none;
-        margin-left: 10px;
       }
       .products {
         display: flex;
@@ -60,4 +52,34 @@
       }
       @media (max-width: 600px) {
         .product {
-          width:
+          width: 250px;
+        }
+      }
+      @media (max-width: 500px) {
+        .product {
+          width: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Summerfield Creations</h1>
+    </header>
+    <div class="products">
+      <div class="product">
+        <h2>Product 1</h2>
+        <img src="product1.jpg" alt="Product 1">
+        <button onclick="window.location.href='buy.html'">Buy</button>
+        <button onclick="window.location.href='description.html'">View Description</button>
+      </div>
+      <div class="product">
+        <h2>Product 2</h2>
+        <img src="product2.jpg" alt="Product 2">
+        <button onclick="window.location.href='buy.html'">Buy</button>
+        <button onclick="window.location.href='description.html'">View Description</button>
+      </div>
+      <!-- Add additional products here -->
+    </div>
+  </body>
+</html>
