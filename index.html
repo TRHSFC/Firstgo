@@ -1,15 +1,33 @@
 <html>
   <head>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       body {
-        background-color: yellow;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
         margin: 0;
       }
       header {
-        background-color: blue;
+        background-color: #333;
         color: white;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      header h1 {
+        margin: 0;
         font-size: 24px;
+      }
+      header nav {
+        display: flex;
+      }
+      header nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
       }
       .products {
         display: flex;
@@ -17,53 +35,5 @@
         justify-content: center;
       }
       .product {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 300px;
-        margin: 10px;
-      }
-      .product img {
-        width: 200px;
-      }
-      .product h2 {
-        margin: 10px 0;
-      }
-      .product button {
-        padding: 10px;
-        margin: 5px;
-        background-color: green;
-        color: white;
-        border: none;
-        cursor: pointer;
-      }
-      @media (max-width: 600px) {
-        .product {
-          width: 250px;
-        }
-      }
-      @media (max-width: 500px) {
-        .product {
-          width: 200px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>Summerfield Creations</header>
-    <div class="products">
-      <div class="product">
-        <h2>Product 1</h2>
-        <img src="product1.jpg" alt="Product 1">
-        <button onclick="alert('Buy Product 1')">Buy</button>
-        <button onclick="alert('View Description')">View Description</button>
-      </div>
-      <div class="product">
-        <h2>Product 2</h2>
-        <img src="product2.jpg" alt="Product 2">
-        <button onclick="alert('Buy Product 2')">Buy</button>
-        <button onclick="alert('View Description')">View Description</button>
-      </div>
-      <div class="product">
-        <h2>Product 3</h2>
-        <img src="product
+        background-color: white;
+       
