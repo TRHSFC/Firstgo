@@ -4,15 +4,48 @@
       body {
         background-color: yellow;
       }
-      h1 {
+      header {
+        background-color: blue;
+        color: white;
         text-align: center;
-        font-size: 34px;
-        color: green;
-        font-weight: bold;
+        font-size: 24px;
+      }
+      .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .product img {
+        width: 200px;
+      }
+      .product h2 {
+        margin: 10px 0;
+      }
+      .product button {
+        padding: 10px;
+        margin: 5px;
+        background-color: green;
+        color: white;
+        border: none;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <h1>Summerfield Creations... coming soon</h1>
+    <header>Summerfield Creations</header>
+    <div class="product">
+      <h2>Product 1</h2>
+      <img src="product1.jpg" alt="Product 1">
+      <button onclick="alert('Buy Product 1')">Buy</button>
+      <button onclick="alert('View Description')">View Description</button>
+    </div>
+    <div class="product">
+      <h2>Product 2</h2>
+      <img src="product2.jpg" alt="Product 2">
+      <button onclick="alert('Buy Product 2')">Buy</button>
+      <button onclick="alert('View Description')">View Description</button>
+    </div>
+    <!-- Add additional products here -->
   </body>
 </html>
